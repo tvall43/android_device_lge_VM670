@@ -4,7 +4,7 @@ PRODUCT_COPY_FILES += device/lge/thunderc-common/configs/media_profiles.xml:syst
 $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, build/target/product/languages_small.mk)
-$(call inherit-product, vendor/cm/config/common.mk)
+#$(call inherit-product, vendor/cm/config/common.mk)
 $(call inherit-product-if-exists, vendor/lge/VM670/VM670-vendor.mk)
 
 CDMA_GOOGLE_BASE := android-sprint-us
@@ -14,3 +14,6 @@ CDMA_CARRIER_NUMERIC := 311490
 include device/lge/thunderc-common/device.mk
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/VM670/overlay
+
+PRODUCT_NAME := VM670
+PRODUCT_BRAND := LGE
